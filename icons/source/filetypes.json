@@ -1,0 +1,278 @@
+{
+  "docx": {
+    "group": "Documents",
+    "mime": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "primary": true,
+    "template": false
+  },
+  "dotx": {
+    "group": "Documents",
+    "mime": "application/vnd.openxmlformats-officedocument.wordprocessingml.template",
+    "primary": true,
+    "template": true
+  },
+  "docxf": {
+    "group": "Documents",
+    "mime": "application/vnd.openxmlformats-officedocument.wordprocessingml.document.docxf",
+    "primary": true,
+    "template": false
+  },
+  "doc": {
+    "group": "Documents",
+    "mime": "application/msword",
+    "primary": false,
+    "template": false
+  },
+  "odt": {
+    "group": "Documents",
+    "mime": "application/vnd.oasis.opendocument.text",
+    "primary": false,
+    "template": false
+  },
+  "ott": {
+    "group": "Documents",
+    "mime": "application/vnd.oasis.opendocument.text-template",
+    "primary": false,
+    "template": true
+  },
+  "fodt": {
+    "group": "Documents",
+    "mime": "application/vnd.oasis.opendocument.text-flat-xml",
+    "primary": false,
+    "template": false
+  },
+  "rtf": {
+    "group": "Documents",
+    "mime": "application/rtf",
+    "primary": false,
+    "template": false
+  },
+  "pages": {
+    "group": "Documents",
+    "mime": "application/vnd.apple.pages",
+    "primary": false,
+    "template": false
+  },
+  "hwp": {
+    "group": "Documents",
+    "mime": "application/x-hwp",
+    "primary": false,
+    "template": false
+  },
+  "hwpx": {
+    "group": "Documents",
+    "mime": "application/x-hwpx",
+    "primary": false,
+    "template": false
+  },
+  "oform": {
+    "group": "Documents",
+    "mime": "application/vnd.openxmlformats-officedocument.wordprocessingml.document.oform",
+    "primary": false,
+    "template": false
+  },
+  "xlsx": {
+    "group": "Spreadsheets",
+    "mime": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "primary": true,
+    "template": false
+  },
+  "xlsm": {
+    "group": "Spreadsheets",
+    "mime": "application/vnd.ms-excel.sheet.macroEnabled.12",
+    "primary": true,
+    "template": false
+  },
+  "xltx": {
+    "group": "Spreadsheets",
+    "mime": "application/vnd.openxmlformats-officedocument.spreadsheetml.template",
+    "primary": true,
+    "template": true
+  },
+  "xlsb": {
+    "group": "Spreadsheets",
+    "mime": "application/vnd.ms-excel.sheet.binary.macroEnabled.12",
+    "primary": true,
+    "template": false
+  },
+  "xls": {
+    "group": "Spreadsheets",
+    "mime": "application/vnd.ms-excel",
+    "primary": false,
+    "template": false
+  },
+  "ods": {
+    "group": "Spreadsheets",
+    "mime": "application/vnd.oasis.opendocument.spreadsheet",
+    "primary": false,
+    "template": false
+  },
+  "ots": {
+    "group": "Spreadsheets",
+    "mime": "application/vnd.oasis.opendocument.spreadsheet-template",
+    "primary": false,
+    "template": true
+  },
+  "fods": {
+    "group": "Spreadsheets",
+    "mime": "application/vnd.oasis.opendocument.spreadsheet-flat-xml",
+    "primary": false,
+    "template": false
+  },
+  "numbers": {
+    "group": "Spreadsheets",
+    "mime": "application/vnd.apple.numbers",
+    "primary": false,
+    "template": false
+  },
+  "csv": {
+    "group": "Spreadsheets",
+    "mime": "text/csv",
+    "primary": false,
+    "template": false
+  },
+  "pptx": {
+    "group": "Presentations",
+    "mime": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "primary": true,
+    "template": false
+  },
+  "pptm": {
+    "group": "Presentations",
+    "mime": "application/vnd.ms-powerpoint.presentation.macroEnabled.12",
+    "primary": true,
+    "template": false
+  },
+  "ppsx": {
+    "group": "Presentations",
+    "mime": "application/vnd.openxmlformats-officedocument.presentationml.slideshow",
+    "primary": true,
+    "template": false
+  },
+  "potx": {
+    "group": "Presentations",
+    "mime": "application/vnd.openxmlformats-officedocument.presentationml.template",
+    "primary": true,
+    "template": true
+  },
+  "ppt": {
+    "group": "Presentations",
+    "mime": "application/vnd.ms-powerpoint",
+    "primary": false,
+    "template": false
+  },
+  "pps": {
+    "group": "Presentations",
+    "mime": "application/vnd.ms-powerpoint",
+    "primary": false,
+    "template": false
+  },
+  "pot": {
+    "group": "Presentations",
+    "mime": "application/vnd.ms-powerpoint",
+    "primary": false,
+    "template": true
+  },
+  "odp": {
+    "group": "Presentations",
+    "mime": "application/vnd.oasis.opendocument.presentation",
+    "primary": false,
+    "template": false
+  },
+  "otp": {
+    "group": "Presentations",
+    "mime": "application/vnd.oasis.opendocument.presentation-template",
+    "primary": false,
+    "template": true
+  },
+  "key": {
+    "group": "Presentations",
+    "mime": "application/vnd.apple.keynote",
+    "primary": false,
+    "template": false
+  },
+  "pdf": {
+    "group": "PDF and fixed layout",
+    "mime": "application/pdf",
+    "primary": true,
+    "template": false
+  },
+  "xps": {
+    "group": "PDF and fixed layout",
+    "mime": "application/vnd.ms-xpsdocument",
+    "primary": false,
+    "template": false
+  },
+  "oxps": {
+    "group": "PDF and fixed layout",
+    "mime": "application/oxps",
+    "primary": false,
+    "template": false
+  },
+  "djvu": {
+    "group": "PDF and fixed layout",
+    "mime": "image/vnd.djvu",
+    "primary": false,
+    "template": false
+  },
+  "vsdx": {
+    "group": "Diagrams",
+    "mime": "application/vnd.ms-visio.drawing.main+xml",
+    "primary": true,
+    "template": false
+  },
+  "odg": {
+    "group": "Diagrams",
+    "mime": "application/vnd.oasis.opendocument.graphics",
+    "primary": false,
+    "template": false
+  },
+  "txt": {
+    "group": "Text and web",
+    "mime": "text/plain",
+    "primary": false,
+    "template": false
+  },
+  "md": {
+    "group": "Text and web",
+    "mime": "text/markdown",
+    "primary": false,
+    "template": false
+  },
+  "xml": {
+    "group": "Text and web",
+    "mime": "application/xml",
+    "primary": false,
+    "template": false
+  },
+  "html": {
+    "group": "Text and web",
+    "mime": "text/html",
+    "primary": false,
+    "template": false
+  },
+  "htm": {
+    "group": "Text and web",
+    "mime": "text/html",
+    "primary": false,
+    "template": false
+  },
+  "mht": {
+    "group": "Text and web",
+    "mime": "application/x-mimearchive",
+    "primary": false,
+    "template": false
+  },
+  "epub": {
+    "group": "E-books",
+    "mime": "application/epub+zip",
+    "primary": false,
+    "template": false
+  },
+  "fb2": {
+    "group": "E-books",
+    "mime": "application/x-fictionbook+xml",
+    "primary": false,
+    "template": false
+  }
+}
