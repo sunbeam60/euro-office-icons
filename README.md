@@ -2,7 +2,7 @@
 
 A replacement icon set for [Euro-Office](https://github.com/Euro-Office/DesktopEditors) - I couldn't live with the default icon, which is barebones at best.
 
-Thanks Claude!
+Thanks Claude for the hard work here. I aimed for something that celebrates the heritage of the name (using a star and the European deep blue and bright yellow) without smelling too much of Europe - I know the authors aren't super happy with the Euro Office name.
 
 There's a script to install these icons on top of Euro-Office. Currently tested on Windows only, but Claude's done its best attempt at getting something workable for Mac and Linux. Contributions happily accepted.
 
