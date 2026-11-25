@@ -1,22 +1,12 @@
 # Euro-Office icons
 
-A replacement icon set for [Euro-Office](https://github.com/Euro-Office/DesktopEditors) — one
-app icon and 46 document icons — together with a script that installs them over the ones the
-application ships, on Windows, Linux and macOS.
+A replacement icon set for [Euro-Office](https://github.com/Euro-Office/DesktopEditors) - I couldn't live with the default icon, which is barebones at best.
+
+Thanks Claude!
+
+There's a script to install these icons on top of Euro-Office. Currently tested on Windows only, but Claude's done its best attempt at getting something workable for Mac and Linux. Contributions happily accepted.
 
 ![The Euro-Office icon set: the app icon and every document icon, shown at 52, 24 and 16 px](graphics/screenshot.png)
-
-## Why
-
-Euro-Office is a rebrand of ONLYOFFICE Desktop Editors, and it inherits its file-type artwork.
-This set is a different take on it: one flat family across every format, with a coloured badge
-per group, a simplified badge for the small sizes, and real alpha everywhere.
-
-Nothing here patches the application. Euro-Office keeps its icons as resources inside
-`DesktopEditors.exe`, which is code-signed; rewriting that binary would break the signature and
-be undone by the next update. The installer instead points the system's own icon lookup at a
-copy of this set, which needs no administrator rights on Windows, survives updates, and comes
-back out cleanly.
 
 ## Quick start
 
