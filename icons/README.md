@@ -25,7 +25,7 @@ mobile/        iOS 1024 marketing icon, Android adaptive + legacy launcher icons
 | `filetypes/<ext>.svg` | File icon master (used at 32 px and above). |
 | `filetypes/16px/<ext>-16.svg` | Simplified-badge version (two text lines, 2×2 grid, and so on), used at 24 px and below. |
 
-**App logo sizes:** bitmaps at 20 px and below use the 16 px logo, 24–96 px use the standard logo, and 128 px and up use the large logo. The logo fills its canvas edge to edge, like Windows' own icons.
+**App logo sizes:** bitmaps at 20 px and below use the 16 px logo, 24–96 px use the standard logo, and 128 px and up use the large logo. The exported app icons are edge to edge: the outer pages' corners touch the canvas, as in Windows' own icons. They have no outer drop shadow, which would otherwise eat into that size; the white page keeps its subtle shadow on the pages behind it.
 
 **File icon sizes:** every bitmap up to 24 px uses the simplified master, because Windows uses the 20 and 24 px frames instead of 16 at 125% and 150% display scaling. Larger sizes use the full master. All bitmaps have real alpha transparency: nothing is drawn behind the artwork.
 
