@@ -1,5 +1,6 @@
 {
-  "background": "#003399",
+  "brand_blue": "#003399",
+  "tile_background": "#E8EEFA",
   "docs": "#2F6FDE",
   "sheets": "#1FA463",
   "slides": "#F39C12",
@@ -7,7 +8,7 @@
   "diagrams": "#6F4CD6",
   "text_web": "#5B6B85",
   "ebooks": "#8D5B3C",
-  "logo_green": "#1FA463",
-  "logo_gold": "#FFCC00",
+  "logo_title_bar": "#14213D",
+  "logo_star": "#0B3A9E",
   "surface": "#F2F5FC"
 }

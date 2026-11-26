@@ -15,14 +15,19 @@ mobile/        iOS 1024 marketing icon, Android adaptive + legacy launcher icons
 
 | Asset | Use |
 |---|---|
-| `euro-office-logo.svg` | Main logo: the frameless three-page stack. Default everywhere except where a platform forces a tile shape. |
-| `euro-office-tile-rounded.svg` | Alternative tile: the same stack on EU blue (#003399) in a rounded square. Use for tablets/mobile. |
+| `euro-office-logo.svg` | Main logo: four coloured pages fanned behind a white page with a navy title bar, blue star and text lines. Use from 24 px to about 96 px. |
+| `euro-office-logo-large.svg` | Same logo with a slimmer title bar, for 128 px and up. |
+| `euro-office-logo-16.svg` | Simplified version for 16–20 px: two back pages (teal and orange) and a bigger star, with no text lines. |
+| `euro-office-logo-dark*.svg` | Dark-mode versions of the three above: pale grey card, EU-blue title bar and star, stronger shadow. |
+| `euro-office-tile-rounded.svg` | Alternative tile: the logo on mist (#E8EEFA) in a rounded square. Use for tablets and mobile. |
 | `euro-office-tile-square.svg` | Same tile with square corners, for platforms that apply their own mask (iOS, apple-touch-icon). |
-| `euro-office-android-foreground.svg` | Stack only, scaled into the Android adaptive-icon safe zone. Background is `#003399`. |
+| `euro-office-android-foreground.svg` | Logo only, scaled into the Android adaptive-icon safe zone. The background is mist, `#E8EEFA`. |
 | `filetypes/<ext>.svg` | File icon master (used at 32 px and above). |
 | `filetypes/16px/<ext>-16.svg` | Simplified-badge version (two text lines, 2×2 grid, and so on), used at 24 px and below. |
 
-**Small sizes:** every bitmap up to 24 px uses the simplified master, because Windows uses the 20 and 24 px frames instead of 16 at 125% and 150% display scaling. Larger sizes use the full master. All bitmaps have real alpha transparency: nothing is drawn behind the artwork.
+**App logo sizes:** bitmaps at 20 px and below use the 16 px logo, 24–96 px use the standard logo, and 128 px and up use the large logo. The logo fills its canvas edge to edge, like Windows' own icons.
+
+**File icon sizes:** every bitmap up to 24 px uses the simplified master, because Windows uses the 20 and 24 px frames instead of 16 at 125% and 150% display scaling. Larger sizes use the full master. All bitmaps have real alpha transparency: nothing is drawn behind the artwork.
 
 ## Windows
 
@@ -36,7 +41,7 @@ mobile/        iOS 1024 marketing icon, Android adaptive + legacy launcher icons
 
 - **App:** `macos/app/AppIcon.iconset` is the canonical source. Running `iconutil -c icns AppIcon.iconset` rebuilds the .icns on a Mac, or you can drop the PNGs into an Xcode asset catalog's AppIcon set.
   - The bundled `AppIcon.icns` was built on Linux and leaves out the 16 and 32 px 1× entries. macOS downscales for those, but rebuild with iconutil for a pixel-perfect set.
-  - macOS uses the blue tile, not the frameless logo, laid out on Apple's grid (tile ≈ 80% of the canvas, transparent margin, soft shadow). On macOS 26, an icon that isn't a rounded square gets put inside a grey tile.
+  - macOS uses the mist tile, not the frameless logo, laid out on Apple's grid (tile ≈ 80% of the canvas, transparent margin, soft shadow). On macOS 26, an icon that isn't a rounded square gets put inside a grey tile.
 - **Documents:** `macos/filetypes/<ext>.icns`. Reference them from `CFBundleDocumentTypes` → `CFBundleTypeIconFile` in Info.plist.
 
 ## Linux (freedesktop)
@@ -62,12 +67,12 @@ gtk-update-icon-cache -f -t /usr/share/icons/hicolor
 ```
 
 - The "any" icons are the frameless logo.
-- The "maskable" icons put the stack on full-bleed blue, inside the 80% safe zone.
+- The "maskable" icons put the logo on full-bleed mist (#E8EEFA), inside the 80% safe zone.
 
 ## Mobile and tablet
 
 - **iOS/iPadOS:** `mobile/ios/AppIcon-1024.png` is square, opaque, with no rounded corners (iOS applies its own mask). Generate the size set with Xcode's single-size app icon.
-- **Android:** copy `mobile/android/res` into the app module. The adaptive icon uses the blue background colour and the foreground stack. The `ic_launcher.png` files are the pre-Android 8 fallback.
+- **Android:** copy `mobile/android/res` into the app module. The adaptive icon uses the mist background colour (#E8EEFA) and the foreground logo. The `ic_launcher.png` files are the pre-Android 8 fallback.
   - There's no monochrome (themed-icon) layer yet.
 - **Tablet tiles:** rounded tiles at 512 and 1024 px, for store listings or launchers that don't mask.
 
@@ -75,8 +80,9 @@ gtk-update-icon-cache -f -t /usr/share/icons/hicolor
 
 | Role | Hex |
 |---|---|
-| Brand background | #003399 |
-| Logo pages | #1FA463 (green) and #FFCC00 (gold), white front page |
+| Brand blue | #003399 |
+| App tile background (mist) | #E8EEFA |
+| Logo pages | #2F6FDE, #1FA463, #F39C12, #E0443A behind a white page; title bar #14213D, star #0B3A9E (16 px back pages: #249488, #EA7026) |
 | Documents | #2F6FDE |
 | Spreadsheets | #1FA463 |
 | Presentations | #F39C12 |
