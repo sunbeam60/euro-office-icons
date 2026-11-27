@@ -23,11 +23,11 @@ mobile/        iOS 1024 marketing icon, Android adaptive + legacy launcher icons
 | `euro-office-tile-square.svg` | Same tile with square corners, for platforms that apply their own mask (iOS, apple-touch-icon). |
 | `euro-office-android-foreground.svg` | Logo only, scaled into the Android adaptive-icon safe zone. The background is mist, `#E8EEFA`. |
 | `filetypes/<ext>.svg` | File icon master (used at 32 px and above). |
-| `filetypes/16px/<ext>-16.svg` | Simplified-badge version (two text lines, 2×2 grid, and so on), used at 24 px and below. |
+| `filetypes/pixel/<size>/<ext>-<size>.svg` | Hand-drawn pixel versions at 16, 20, 24 and 32 px. Every shape sits on whole pixels; render them at exactly that size. |
 
 **App logo sizes:** bitmaps at 20 px and below use the 16 px logo, 24–96 px use the standard logo, and 128 px and up use the large logo. The exported app icons are edge to edge: the outer pages' corners touch the canvas, as in Windows' own icons. They have no outer drop shadow, which would otherwise eat into that size; the white page keeps its subtle shadow on the pages behind it.
 
-**File icon sizes:** every bitmap up to 24 px uses the simplified master, because Windows uses the 20 and 24 px frames instead of 16 at 125% and 150% display scaling. Larger sizes use the full master. All bitmaps have real alpha transparency: nothing is drawn behind the artwork.
+**File icon sizes:** the 16, 20, 24 and 32 px bitmaps are the hand-drawn pixel icons (Windows uses the 20 and 24 px frames at 125% and 150% display scaling, and 32 at 200%). Linux's 22 px icon is the 20 px pixel icon centred on a 22 px canvas. Every other size is rendered from the vector master. All bitmaps have real alpha transparency: nothing is drawn behind the artwork.
 
 ## Windows
 
@@ -40,7 +40,6 @@ mobile/        iOS 1024 marketing icon, Android adaptive + legacy launcher icons
 ## macOS
 
 - **App:** `macos/app/AppIcon.iconset` is the canonical source. Running `iconutil -c icns AppIcon.iconset` rebuilds the .icns on a Mac, or you can drop the PNGs into an Xcode asset catalog's AppIcon set.
-  - The bundled `AppIcon.icns` was built on Linux and leaves out the 16 and 32 px 1× entries. macOS downscales for those, but rebuild with iconutil for a pixel-perfect set.
   - macOS uses the mist tile, not the frameless logo, laid out on Apple's grid (tile ≈ 80% of the canvas, transparent margin, soft shadow). On macOS 26, an icon that isn't a rounded square gets put inside a grey tile.
 - **Documents:** `macos/filetypes/<ext>.icns`. Reference them from `CFBundleDocumentTypes` → `CFBundleTypeIconFile` in Info.plist.
 
