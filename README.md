@@ -2,7 +2,9 @@
 
 A replacement icon set for [Euro-Office](https://github.com/Euro-Office/DesktopEditors) - I couldn't live with the default icon, which is barebones at best.
 
-Thanks Claude for the hard work here. I aimed for something that celebrates the heritage of the name (using a star and the European deep blue and bright yellow) without smelling too much of Europe - I know the authors aren't super happy with the Euro Office name.
+I aimed for something that celebrates the heritage of the name (using a star and the European deep blue and bright yellow) without smelling too much of Europe - I know the authors aren't super happy with the Euro Office name.
+
+Claude Design used heavily to create the symbols and app logo, but icons at 32px, 24px, 20px and 16px are hand-drawn to get crisp pixels - on Windows these are the "small" icons used at 200%, 150%, 125% and 100% scaling. Larger icons (40px and up) are derived straight from the vector version since there's enough pixel to create crispness even from a vector line that smudges across pixel boundaries.
 
 There's a script to install these icons on top of Euro-Office. Currently tested on Windows only, but Claude's done its best attempt at getting something workable for Mac and Linux. Contributions happily accepted.
 
